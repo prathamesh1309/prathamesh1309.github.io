@@ -1,37 +1,211 @@
 <!DOCTYPE html>
-<!-- 
-    Hi everyone, following code is preset template,
-    where you can fill your details and your new webpage is ready to be published.
-    Details required are following:
-
-    $full_name: Student's Full Name. For eg: Patel Drumil Nileshbhai.
-    $github_username: Student's Github Username. For eg: weastel.
-    $profile_pic_url: Student's Profile Pic URl can be taken from any public website such as: Github, Facebook.
-    $branch: Student's Branch
-    $studying_year:Student's Year in following format:
-        1st Year:       Freshmen
-        2nd Year:       Sophomore
-        Prefinal Year:  Junior
-        Final Year:     Senior
-    
- -->
-<html>
+<html lang="en">
 <head>
-    <link rel="stylesheet" type="text/css" href="index.css">
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Prathamesh Satpute</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Prathamesh Satpute</title>
+<style>
+  body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #333; /* Dark background */
+    color: #f0f0f0; /* Light text */
+  }
+  .header {
+    background-color: #111; /* Dark header background */
+    color: #fff;
+    text-align: center;
+    padding: 2rem 0;
+    margin-bottom: 1rem;
+  }
+  .container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 1rem;
+    background-color: #444; /* Dark container background */
+    box-shadow: 0 0 5px rgba(255, 255, 255, 0.1);
+  }
+  .profile-photo {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    border: 3px solid #007BFF;
+    object-fit: cover;
+  }
+  .section-heading {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin: 1rem 0;
+    color: #007BFF; /* Accent color for headings */
+  }
+  .content {
+    margin-top: 0.5rem;
+    line-height: 1.6;
+  }
+  ul {
+    padding-left: 1.5rem;
+  }
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+    color: #f0f0f0;
+  }
+  th, td {
+    border: 1px solid #555; /* Dark table borders */
+    padding: 8px;
+    text-align: center;
+  }
+  th {
+    background-color: #333; /* Dark table header background */
+  }
+</style>
 </head>
 <body>
-    <div class="main-content">
-        <img class="profile-pic" src="image.jpg" alt="profile-pic" width="800px" height="100px"> 
-        <div class="content">
-            <h2 class="color"> Hello, World. </h2> <br>
-            I am <span class="color"><b>Prathamesh Satpute</b></span>. <br>
-            I am currently a Junior studying Metallurgy and Materials Engineering at Indian Institute of Technology, Roorkee.
-            <p class="link"><a href="https://github.com/prathamesh1309">@prathamesh1309</a></p>
-        </div>
+  <div class="header">
+    <h1>Prathamesh Satpute</h1>
+    <p>Indian Institute of Technology, Roorkee</p>
+  </div>
+  <div class="container">
+    <img class="profile-photo" src="photo.jpg" alt="Profile Photo">
+    <div class="section-heading">Contact Information</div>
+    <div class="content">
+      <p>UG (IV Year I Semester)</p>
+      <p>B.Tech. (Metallurgical & Materials Engineering)</p>
+      <p>Contact No: 7057267424</p>
+      <p>Email: prathamesh1309@gmail.com</p>
+      <p>Registration No: 20118061/2024</p>
     </div>
+
+    <div class="section-heading">Area of Interest</div>
+    <div class="content">
+      <p>Computer Vision, Natural Language Processing, Machine Learning</p>
+    </div>
+
+    <div class="section-heading">Education</div>
+<div class="content">
+  <table class="education-table">
+    <tr>
+      <th>Year</th>
+      <th>Degree/Examination</th>
+      <th>CGPA/Percentage</th>
+      <th>Institution/Board</th>
+    </tr>
+    <tr>
+      <td>2023</td>
+      <td>B.Tech. 3rd Year</td>
+      <td>7.571</td>
+      <td>Indian Institute of Technology, Roorkee</td>
+    </tr>
+    <tr>
+      <td>2020</td>
+      <td>Intermediate (Class XII)</td>
+      <td>94.00 %</td>
+      <td>City International School, Wanowrie (Pune)</td>
+    </tr>
+    <tr>
+      <td>2018</td>
+      <td>Matriculate (Class X)</td>
+      <td>95.33 %</td>
+      <td>Pawar Public School, Pune (ICSE)</td>
+    </tr>
+  </table>
+</div>
+
+    <div class="section-heading">Internships</div>
+    <div class="content">
+
+        <p>Machine Learning engineering Intern | PipeIQ.ai</p>
+      <p>May 2023 - August 2023</p>
+      <ul>
+        <li>Worked on hyper-personalized email generation using several Large Language Models.</li>
+        <li>Used Langchain to power the email generation engine to be connected by a vector database and developed several Langchain agents which can interact and take decisions autonomously.</li>
+      </ul>
+
+        <p>Machine Learning Research Intern | Brainovative Labs</p>
+      <p>February 2023 - April 2023</p>
+      <ul>
+        <li>Developing models for speech recognition using EMG signals for dysarthric patients.</li>
+        <li>Preprocessed and converted multichannel EMG signal to spectrograms and decided on model architecture for training the speech recognition model.</li>
+      </ul>
+
+
+      <p>Data Science Intern | Neurals.ai</p>
+      <p>November 2022 - January 2023</p>
+      <ul>
+        <li>Worked on Style transfer and Pose transfer for Indian Clothing using Virtual Try-On models.</li>
+        <li>Scrapped Indian fashion websites for adapting these models for traditional clothing.</li>
+        <li>Also worked on other problems like Pan Card OCR and Deepfake generation.</li>
+      </ul>
+
+
+    </div>
+
+    <div class="section-heading">Projects</div>
+    <div class="content">
+      <p>Image Colorization | IIT Roorkee</p>
+      <p>May 2022 - June 2022</p>
+      <ul>
+        <li>Created a model that can colorize images by taking a black and white image as input and producing a colorized image as output by implementing pix2pix architecture in Pytorch.</li>
+        <li>Converted the RGB images to Lab image space and passed the L channel(grayscale image) to the generator to get a and b channels as output.</li>
+        <li>Experimented with pretrained U-net generator with ResNet backbone to get better results.</li>
+      </ul>
+
+      <p>News Classification using NLP | Personifwy</p>
+      <p>April 2022 - June 2022</p>
+      <ul>
+        <li>Trained a model to identify fake news using sklearn.</li>
+        <li>Performed various preprocessing tasks on text data like tokenization, stemming, vectorization, etc using nltk.</li>
+        <li>Tried various models to achieve greater accuracy.</li>
+      </ul>
+
+      <p>Animal Image Classification | IIT Roorkee</p>
+      <p>September 2021</p>
+      <ul>
+        <li>Performed image classification on animal classification dataset using PyTorch.</li>
+        <li>Trained a Convolutional Neural Network similar to ResNet architecture to classify images into 10 classes to achieve 90% accuracy.</li>
+      </ul>
+
+      <p>Music Genre Classification | IIT Roorkee</p>
+      <p>March 2021</p>
+      <ul>
+        <li>Performed exploratory data analysis on the given dataset.</li>
+        <li>Classified data into different genres using neural networks in PyTorch.</li>
+      </ul>
+    </div>
+
+    <div class="section-heading">Awards / Scholarships / Academic Achievements</div>
+    <div class="content">
+      <ul>
+        <li>Selected in Amazon ML Summer School 2022.</li>
+        <li>Ranked 6101 in JEE Advanced 2020 Exam.</li>
+        <li>Completed Praveshika Purna exam in Tabla.</li>
+      </ul>
+    </div>
+
+    <div class="section-heading">Skills</div>
+    <div class="content">
+      <p>Computer languages: C++, Python</p>
+      <p>Software Packages: Pytorch, OpenCV, NLTK</p>
+      <p>Additional Courses: Machine Learning Course and Deep Learning Specialization by Andrew Ng on Coursera</p>
+    </div>
+
+    <div class="section-heading">Positions of Responsibility & Extra Curriculars</div>
+    <div class="content">
+      <p>Core Member | Data Science Group, IIT Roorkee</p>
+      <ul>
+        <li>Working on different projects in the Data Science domain.</li>
+        <li>Held open lectures and discussions on recent development and research papers in Deep Learning.</li>
+        <li>Conducted various workshops for the IITR community.</li>
+      </ul>
+
+      <p>Volunteer | National Service Scheme, IIT Roorkee</p>
+      <ul>
+        <li>Worked in Pragati Cell of NSS, IIT Roorkee</li>
+      </ul>
+    </div>
+  </div>
 </body>
-</html
+</html>
+
